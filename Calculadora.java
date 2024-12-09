@@ -7,6 +7,7 @@ public class Calculadora {
         multiplicacion(5,5);
         division(10,2);
         potencia2(3);
+        raizCuadrada(4);//Ejemplo de Raiz
     }
     public static void suma(Integer num, Integer num1){
         System.out.println(num+num1);
@@ -23,4 +24,11 @@ public class Calculadora {
     public static void potencia2(Integer num){
         System.out.println(num*num);
     }
+    //Funcion de Raiz Cuadrada Añadida
+   public static void raizCuadrada(double numero){
+        if (numero < 0) {
+            System.out.println("No se puede calcular la raíz cuadrada de un número negativo.");
+        }
+        System.out.println(Math.sqrt(numero));
+   }
 }
