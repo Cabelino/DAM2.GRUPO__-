@@ -9,6 +9,7 @@ public class Calculadora {
         potencia2(3);
         raizCuadrada(4);//Ejemplo de Raiz
         log(100);
+        reglaDeTresDirecta(2,6,5);
     }
     public static void suma(Integer num, Integer num1){
         System.out.println(num+num1);
@@ -44,5 +45,10 @@ public class Calculadora {
                 : "Error: log(x) solo es válido para x > 0";
 
         System.out.println(resultado);
+    }
+
+    // Parte Jesús
+    public static void reglaDeTresDirecta(double num1,double num2,double num3) {
+        System.out.println((num2 * num3) / (double) num1);
     }
 }
