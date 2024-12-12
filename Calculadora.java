@@ -32,6 +32,10 @@ public class Calculadora {
         }
         System.out.println(Math.sqrt(numero));
    }
+    // Parte Diego
+    public static void modulo (Integer numero1, Integer numero2){
+        System.out.println(numero1%numero2);
+    }
 
     // Parte César
     public static void log(Integer num){
