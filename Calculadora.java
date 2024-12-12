@@ -31,4 +31,7 @@ public class Calculadora {
         }
         System.out.println(Math.sqrt(numero));
    }
+    public static void modulo (Integer numero1, Integer numero2){
+        System.out.println(numero1%numero2);
+    }
 }
