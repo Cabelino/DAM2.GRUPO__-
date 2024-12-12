@@ -8,6 +8,7 @@ public class Calculadora {
         division(10,2);
         potencia2(3);
         raizCuadrada(4);//Ejemplo de Raiz
+        log(100);
     }
     public static void suma(Integer num, Integer num1){
         System.out.println(num+num1);
@@ -31,7 +32,17 @@ public class Calculadora {
         }
         System.out.println(Math.sqrt(numero));
    }
+    // Parte Diego
     public static void modulo (Integer numero1, Integer numero2){
         System.out.println(numero1%numero2);
+    }
+
+    // Parte César
+    public static void log(Integer num){
+        String resultado = num > 0
+                ? String.format(Locale.US, "%.2f", Math.log10(num))
+                : "Error: log(x) solo es válido para x > 0";
+
+        System.out.println(resultado);
     }
 }
