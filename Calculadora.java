@@ -61,4 +61,11 @@ public class Calculadora {
         System.out.println(factor);
     }
 
+    //Parte de Gonzalo
+    public static double calcularSeno(double anguloGrados) {
+        double anguloRadianes = Math.toRadians(anguloGrados);
+
+        // Calcular el seno
+        return Math.sin(anguloRadianes);
+    } 
 }
