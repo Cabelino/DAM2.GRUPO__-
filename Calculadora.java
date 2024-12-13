@@ -51,4 +51,14 @@ public class Calculadora {
     public static void reglaDeTresDirecta(double num1,double num2,double num3) {
         System.out.println((num2 * num3) / (double) num1);
     }
+    
+    // Parte Marcos
+    public static void factorial( int num) {
+        int factor = 1;
+        for (int i = 1; i <= num; i++) {
+            factor *= i;
+        }
+        System.out.println(factor);
+    }
+
 }
