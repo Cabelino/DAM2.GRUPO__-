@@ -1,5 +1,8 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
+import java.util.Locale;
+
 public class Calculadora {
     public static void main(String[] args) {
         suma(3,2);
@@ -68,4 +71,24 @@ public class Calculadora {
         // Calcular el seno
         return Math.sin(anguloRadianes);
     } 
+
+    // Parte Walther
+    /**
+     * Esta método calcula el promedio dependiendo de los números que pongas
+     * y te imprime el resultado.
+     * @param numeros este es el parámetro que recibe uno o varios Double para
+     *                 poder calcular el promedio.
+     */
+    public static void promedio(double... numeros) {
+        if (numeros.length == 0) {
+            System.out.println("Error: No se proporcionaron números.");
+            return;
+        }
+        double suma = 0;
+        for (double numero : numeros) {
+            suma += numero;
+        }
+        double promedio = suma / numeros.length;
+        System.out.println("Promedio: " + promedio);
+    }
 }
